@@ -1,0 +1,267 @@
+.product-background {
+    background: radial-gradient(
+        81.93% 122.75% at 8.89% 81.22%,
+        #48dff4 1.32%,
+        rgba(233, 252, 255, 0) 100%
+    );
+}
+/* Slides */
+.slides .slide-img.high {
+    height: 600px;
+}
+
+.slides.low {
+    margin-top: 0px;
+}
+
+/* Nav filter */
+/* common */
+.product {
+    margin-bottom: 120px;
+}
+.sort {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.948px;
+}
+
+.nav-filter {
+    width: 20.84%;
+}
+.nav-filter .brand {
+    margin: 0;
+    padding: 0;
+}
+.nav-filter .filter-name {
+    color: #000;
+    margin-top: 50px;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 0.948px;
+}
+.nav-filter .price-name {
+    margin-top: 46px;
+}
+.nav-filter .price .price-rate {
+    display: flex;
+    margin-top: 45px;
+    align-items: center;
+}
+
+.nav-filter .price .price-rating {
+    color: #171100;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.948px;
+}
+.nav-filter .price .price-money {
+    display: block;
+    width: 39px;
+    height: 23px;
+    border-radius: 7px;
+    background: #fff;
+    color: #171100;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0.646px;
+    margin: 0 23px;
+}
+.separate {
+    width: 248px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.32);
+    margin-top: 26px;
+}
+.nav-filter .brand .brand-row,
+.nav-filter .sport .sport-row,
+.nav-filter .color .color-row,
+.nav-filter .order-items .order-row,
+.nav-filter .special-features .special-features-row {
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+}
+.nav-filter .brand .brand-name,
+.nav-filter .sport .sport-name,
+.nav-filter .color .color-name {
+    margin-right: 147px;
+}
+.nav-filter .brand .brand-search {
+    position: relative;
+    width: 208px;
+    height: 28px;
+    border-radius: 7px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #171100;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.948px;
+    margin-top: 10px;
+}
+.nav-filter .brand .brand-list,
+.nav-filter .sport .sport-list {
+    margin-top: 25px;
+}
+.nav-filter .brand .brand-item,
+.nav-filter .sport .sport-item {
+    margin-bottom: 11px;
+}
+.nav-filter .brand .brand-item-name,
+.nav-filter .sport .sport-item-name {
+    margin-left: 8px;
+    color: #171100;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 9.482px; /* 94.815% */
+    letter-spacing: 0.948px;
+}
+
+.nav-filter .brand .brand-search::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 71px;
+    height: 4px;
+    transform: rotate(-90deg);
+    border-radius: 10px;
+    background: rgba(1, 138, 190, 0.94);
+    right: -77px;
+    top: 60px;
+}
+.nav-filter .brand .brand-search::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 131px;
+    height: 3px;
+    transform: rotate(-90deg);
+    border-radius: 10px;
+    border: 0.7px solid rgba(1, 138, 190, 0.94);
+    background: #fff;
+    right: -107.5px;
+    top: 159px;
+}
+
+.nav-filter .color .color-block {
+    width: 150px;
+    margin: 30px 22px 41px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 14px; /*khoang cach column va row cua the con*/
+}
+.nav-filter .color .color-group {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: #63cdef;
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25))
+        drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nav-filter .order-items .order-items-name {
+    margin-right: 90px;
+}
+
+.nav-filter .special-features .special-features-name {
+    margin-right: 50px;
+}
+
+/* product-block */
+/* Product */
+.product .body {
+    display: flex;
+}
+
+.product-block {
+    margin-left: 74px;
+    width: 900px;
+}
+.product-block .product-list {
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+.product-name {
+    margin-top: 14px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 23.5px; /* 90.385% */
+    letter-spacing: 0.948px;
+}
+.product-sort-block {
+    display: flex;
+    align-items: center;
+}
+.product-results {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.product-sort-box {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+    width: 140px;
+    height: 30px;
+
+    border-radius: 7px;
+    background: #fff;
+}
+.product-sort-box:nth-of-type(2) {
+    margin-left: 24px;
+}
+.product-sort-box .box-name {
+    color: #bcbcbc;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.646px;
+}
+.product-sort-box .box-result {
+    margin-right: 12px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    line-height: 6.456px;
+    letter-spacing: 0.646px;
+}
+.product-sort-block .product-sort-clear {
+    display: block;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.646px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.product-sort-by {
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.product-loading {
+    margin: 63px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0ac4de;
+    width: 130px;
+    height: 40px;
+}
+.product-loading span {
+    text-align: center;
+    margin-right: 10px;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.646px;
+}
