@@ -18,6 +18,467 @@
         />
     </head>
     <body>
-        <h1>Lukasport</h1>
+        <main>
+            <header class="header fixed">
+                <div class="main-content">
+                    <div class="body">
+                        <img
+                            src="./assets/icons/logo.svg"
+                            alt="lukasport"
+                            class="logo"
+                        />
+                        <nav class="nav">
+                            <ul>
+                                <li class="active">
+                                    <a href="#!">Home</a>
+                                </li>
+                                <li class="">
+                                    <a href="#!">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Service</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#!">About Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="action">
+                            <button class="btn resgister">Register</button>
+                            <button class="btn login">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Hero -->
+            <div class="hero">
+                <div class="main-content">
+                    <div class="body">
+                        <div class="hero-left">
+                            <h1 class="heading">
+                                Chase Your Experience with us
+                            </h1>
+                            <p class="desc">
+                                The harder you work for something, the greater
+                                you’ll feel when you achieve it. Strive for
+                                greatness, persevere through challenges, and
+                                triumph in the face of adversity!
+                            </p>
+                            <div class="cta">
+                                <button class="btn">Buy Online</button>
+                                <button class="btn">Discovery</button>
+                            </div>
+                        </div>
+
+                        <div class="hero-right">
+                            <img
+                                src="./assets/img/hero.png"
+                                alt=""
+                                class="hero-img"
+                            />
+                            <div class="box-shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="slides">
+                <div class="slide-item">
+                    <img
+                        src="./assets/img/slide1.avif"
+                        alt="slide1"
+                        class="slide-img"
+                    />
+
+                    <div class="dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <!-- item2 -->
+                <div class="slide-item hidden">
+                    <img
+                        src="./assets/img/slide2.avif"
+                        alt="slide2"
+                        class="slide-img"
+                    />
+
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <!-- item3 -->
+                <div class="slide-item hidden">
+                    <img
+                        src="./assets/img/slide3.avif"
+                        alt="slide3"
+                        class="slide-img"
+                    />
+
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <!-- item4 -->
+                <div class="slide-item hidden">
+                    <img
+                        src="./assets/img/slide4.avif"
+                        alt="slide4"
+                        class="slide-img"
+                    />
+
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                    </div>
+                </div>
+
+                <script>
+                    // Lấy danh sách các phần tử
+                    const items = document.querySelectorAll(".slide-item");
+                    let currentIndex = 0;
+
+                    // Hàm trượt qua các phần tử
+                    function slideNext() {
+                        // Ẩn phần tử hiện tại
+                        items[currentIndex].classList.add("hidden");
+
+                        // Tăng chỉ số
+                        currentIndex++;
+
+                        // Nếu đã đến cuối danh sách, quay lại phần tử đầu tiên
+                        if (currentIndex === items.length) {
+                            currentIndex = 0;
+                        }
+
+                        // Hiển thị phần tử tiếp theo
+                        items[currentIndex].classList.remove("hidden");
+                    }
+
+                    // Trượt qua các phần tử sau mỗi 0.3 giây
+                    const intervalId = setInterval(slideNext, 2000);
+                </script>
+            </div>
+
+            <!-- New Product -->
+            <div class="new">
+                <div class="main-content">
+                    <div class="body">
+                        <div class="new-top">
+                            <div class="info">
+                                <h2 class="heading lv2">New model everyday</h2>
+                                <p class="desc">
+                                    There are always new models updated
+                                    continuously, giving you many trendy
+                                    choices.
+                                </p>
+                            </div>
+                            <div class="controls">
+                                <button class="btn">
+                                    View Now
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-item">
+                                <img
+                                    src="./assets/img/new-1.png"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <h3 class="name">ARGENTINA 23 HOME JERSEY</h3>
+
+                                <div class="foot">
+                                    <span class="price">$120.75</span>
+                                    <button class="btn view">View</button>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <img
+                                    src="./assets/img/new-2.png"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <h3 class="name">ARGENTINA 23 HOME JERSEY</h3>
+
+                                <div class="foot">
+                                    <span class="price">$120.75</span>
+                                    <button class="btn view">View</button>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <img
+                                    src="./assets/img/new-3.jpg"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <h3 class="name">ARGENTINA 23 HOME JERSEY</h3>
+
+                                <div class="foot">
+                                    <span class="price">$120.75</span>
+                                    <button class="btn view">View</button>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <img
+                                    src="./assets/img/new-4.png"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <h3 class="name">ARGENTINA 23 HOME JERSEY</h3>
+
+                                <div class="foot">
+                                    <span class="price">$120.75</span>
+                                    <button class="btn view">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="cate">
+                <div class="main-content">
+                    <div class="body">
+                        <div class="cate-top">
+                            <div class="info">
+                                <h2 class="heading lv2">Categories</h2>
+                                <p class="desc">
+                                    Prices are always cheap, new models are
+                                    constantly updated. Choose your favorite
+                                    product now and focus on exercising every
+                                    day.
+                                </p>
+                            </div>
+                            <div class="controls">
+                                <button class="btn">
+                                    View Now
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-item">
+                                <img
+                                    src="./assets/img/new-1.png"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <div class="foot">
+                                    <h3 class="name">FOOTBALL</h3>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <img
+                                    src="./assets/img/new-2.png"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <div class="foot">
+                                    <h3 class="name">BASKETBALL</h3>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <img
+                                    src="./assets/img/new-3.jpg"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <div class="foot">
+                                    <h3 class="name">RUNNING</h3>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <img
+                                    src="./assets/img/new-4.png"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <div class="foot">
+                                    <h3 class="name">VOLLEYBALL</h3>
+                                </div>
+                            </div>
+                            <div class="product-item hidden">
+                                <img
+                                    src="./assets/img/new-4.png"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <div class="foot">
+                                    <h3 class="name">WORKOUT</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog  -->
+            <div class="blog">
+                <div class="main-content">
+                    <div class="body">
+                        <div class="images">
+                            <img src="./assets/img/blog-1 (1).png" alt="" />
+                        </div>
+                        <div class="content">
+                            <h2 class="heading lv2">David Beckham</h2>
+                            <p class="desc">
+                                David Robert Joseph Beckham is an English former
+                                professional footballer who played for
+                                Manchester United, Preston North End, Real
+                                Madrid, A.C. Milan, Los Angeles Galaxy, Paris
+                                Saint-Germain and the England national team in
+                                the midfield position
+                            </p>
+
+                            <a href="#!" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog blog-2nd">
+                <div class="main-content">
+                    <div class="body">
+                        <div class="content">
+                            <h2 class="heading lv2">Wayne Rooney</h2>
+                            <p class="desc">
+                                Wayne Mark Rooney is a former footballer and
+                                current football coach for EFL Championship club
+                                Birmingham City. He usually plays as a striker,
+                                sometimes he is also used as a midfielder.
+                            </p>
+
+                            <a href="#!" class="btn">Read More</a>
+                        </div>
+                        <div class="images">
+                            <img src="./assets/img/blog-2.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brand -->
+            <div class="brand">
+                <div class="main-content">
+                    <div class="body">
+                        <h2 class="heading lv2">FAVORITES FAMOUS</h2>
+                        <div class="brand-block">
+                            <img
+                                src="./assets/icons/brand-1.svg"
+                                alt=""
+                                class="brand-img"
+                            />
+                            <img
+                                src="./assets/icons/brand-2.svg"
+                                alt=""
+                                class="brand-img"
+                            />
+                            <img
+                                src="./assets/icons/brand-3.svg"
+                                alt=""
+                                class="brand-img"
+                            />
+                            <img
+                                src="./assets/icons/brand-4.svg"
+                                alt=""
+                                class="brand-img"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="main-content">
+                <div class="body">
+                    <div class="social">
+                        <img
+                            src="./assets/icons/logo2.svg"
+                            alt=""
+                            class="logo"
+                        />
+
+                        <p class="desc">
+                            "Never give up, keep pushing forward. Believe in
+                            yourself and your abilities!"
+                        </p>
+                        <div class="social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h4 class="head">Store</h4>
+                        <ul class="info-cate">
+                            <li>About Us</li>
+                            <li>Features</li>
+                            <li>Our Pricing</li>
+                            <li>Latest News</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h4 class="head">Support</h4>
+                        <ul class="info-cate">
+                            <li><a href="#!">FAQ’s</a></li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h4 class="head">Address</h4>
+                        <ul class="info-cate">
+                            <li>
+                                <address>
+                                    <span class="contact">Location: </span> 27
+                                    To Ki St, 12 District, Ho Chi Minh City
+                                </address>
+                            </li>
+                            <li>
+                                <a href="mailto:example@example.com">
+                                    <span class="contact"> Email: </span
+                                    >lukasport@gmail.com</a
+                                >
+                            </li>
+                            <li>
+                                <a href="tel:+1234567890"
+                                    ><span class="contact">Phone: </span
+                                    >0378585203</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
