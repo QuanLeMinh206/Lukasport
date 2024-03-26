@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lukasport</title>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/" />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon//apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon//apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon//apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon//apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon//apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon//apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon//apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon//apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon//android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon//favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon//favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon//favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon//manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- reset css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- styles css -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/register.css" />
+
+        <!-- embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700;1,800&family=Sen:wght@400..800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body style="height: 2000px">
+        <!-- register -->
+        <div class="register">
+            <div class="main-content">
+                <div class="register-block">
+                    <div class="register-image">
+                        <img
+                            src="./assets/img/register-img.svg"
+                            alt="mc-images"
+                            class="images-res"
+                        />
+                    </div>
+                    <div class="form-content">
+                        <h2 class="heading lv2 create">
+                            Hi, Welcome to <span>Luka</span>
+                        </h2>
+                        <div class="social-link">
+                            <button
+                                type="submit"
+                                onclick="signInWithGoogle()"
+                                class="btn-social google"
+                            >
+                                <img
+                                    src="./assets/icons/google-img.svg"
+                                    alt="google"
+                                />
+                                <span>Sign up with google</span>
+                            </button>
+
+                            <button
+                                type="submit"
+                                onclick="signInWithFacebook()"
+                                class="btn-social facebook"
+                            >
+                                <img
+                                    src="./assets/icons/facebook-register.svg"
+                                    alt="facebook"
+                                />
+                                <span>Sign up with facebook</span>
+                            </button>
+                        </div>
+                        <div class="or-register">-OR-</div>
+                        <form action="" class="form">
+                            <div class="enter name">
+                                <label for="name">Your name</label>
+                                <input
+                                    id="name"
+                                    type="text"
+                                    class="info"
+                                    placeholder="Enter your name"
+                                />
+                            </div>
+                            <div class="enter email">
+                                <label for="email">Your email</label>
+                                <input
+                                    id="email"
+                                    type="email"
+                                    class="info"
+                                    placeholder="Enter your email"
+                                />
+                            </div>
+                            <div class="enter password">
+                                <label for="password">Password</label>
+
+                                <input
+                                    id="password"
+                                    type="password"
+                                    class="info"
+                                    placeholder="Enter your password"
+                                />
+                                <button
+                                    type="button"
+                                    class="toggle-password"
+                                    onclick="togglePasswordVisibility()"
+                                >
+                                    <i
+                                        class="fas fa-eye-slash"
+                                        id="toggleIcon"
+                                    ></i>
+                                </button>
+                            </div>
+                            <script>
+                                function togglePasswordVisibility() {
+                                    var passwordInput =
+                                        document.getElementById("password");
+                                    var toggleIcon =
+                                        document.getElementById("toggleIcon");
+
+                                    if (passwordInput.type === "password") {
+                                        passwordInput.type = "text";
+                                        toggleIcon.classList.remove(
+                                            "fa-eye-slash"
+                                        );
+                                        toggleIcon.classList.add("fa-eye");
+                                    } else {
+                                        passwordInput.type = "password";
+
+                                        toggleIcon.classList.remove("fa-eye");
+                                        toggleIcon.classList.add(
+                                            "fa-eye-slash"
+                                        );
+                                    }
+                                }
+                            </script>
+                            <button class="btn submit">Create Account</button>
+                        </form>
+                        <div class="switch-account">
+                            <span>Already have an account ?</span
+                            ><a href="#!"> Login</a>
+                        </div>
+                        <div class="btn back-home">
+                            <i class="fa-solid fa-arrow-left"></i
+                            ><span>Back to shop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

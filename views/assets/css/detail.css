@@ -329,7 +329,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
     display: block;
-    z-index: 2;
+
     background: transparent;
     position: relative;
 }
@@ -383,7 +383,6 @@ h2.tab-title.tab-default {
     box-shadow: 0px 0px 8px 0px hsl(262deg 100% 70% / 70%);
     transition: all 0.3s;
     top: 48px;
-    z-index: 2;
 }
 
 .content textarea {
