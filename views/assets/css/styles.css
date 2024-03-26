@@ -22,6 +22,18 @@ body {
 a {
     text-decoration: none;
 }
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp.clamp-2 {
+    --line-clamp: 2;
+}
+.word-break {
+    word-break: break-all;
+}
 /* Common */
 .main-content {
     width: 1200px;

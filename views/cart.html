@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lukasport</title>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/" />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon//apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon//apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon//apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon//apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon//apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon//apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon//apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon//apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon//android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon//favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon//favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon//favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon//manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- reset css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- styles css -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/cart.css" />
+
+        <!-- embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700;1,800&family=Sen:wght@400..800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <!-- Header -->
+            <header class="header fixed">
+                <div class="main-content">
+                    <div class="body">
+                        <img
+                            src="./assets/icons/logo.svg"
+                            alt="lukasport"
+                            class="logo"
+                        />
+                        <nav class="nav">
+                            <ul>
+                                <li class="active">
+                                    <a href="#!">Home</a>
+                                </li>
+                                <li class="">
+                                    <a href="#!">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Service</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#!">About Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="action">
+                            <button class="btn resgister">Register</button>
+                            <button class="btn login">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Body -->
+            <!-- Slide -->
+            <div class="slides">
+                <div class="slide-item">
+                    <img
+                        src="./assets/img/slide1.avif"
+                        alt="slide1"
+                        class="slide-img"
+                    />
+
+                    <div class="dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <!-- item2 -->
+                <div class="slide-item hidden">
+                    <img
+                        src="./assets/img/slide2.avif"
+                        alt="slide2"
+                        class="slide-img"
+                    />
+
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <!-- item3 -->
+                <div class="slide-item hidden">
+                    <img
+                        src="./assets/img/slide3.avif"
+                        alt="slide3"
+                        class="slide-img"
+                    />
+
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <!-- item4 -->
+                <div class="slide-item hidden">
+                    <img
+                        src="./assets/img/slide4.avif"
+                        alt="slide4"
+                        class="slide-img"
+                    />
+
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                    </div>
+                </div>
+
+                <script>
+                    // Lấy danh sách các phần tử
+                    const items = document.querySelectorAll(".slide-item");
+                    let currentIndex = 0;
+
+                    // Hàm trượt qua các phần tử
+                    function slideNext() {
+                        // Ẩn phần tử hiện tại
+                        items[currentIndex].classList.add("hidden");
+
+                        // Tăng chỉ số
+                        currentIndex++;
+
+                        // Nếu đã đến cuối danh sách, quay lại phần tử đầu tiên
+                        if (currentIndex === items.length) {
+                            currentIndex = 0;
+                        }
+
+                        // Hiển thị phần tử tiếp theo
+                        items[currentIndex].classList.remove("hidden");
+                    }
+
+                    // Trượt qua các phần tử sau mỗi 0.3 giây
+                    const intervalId = setInterval(slideNext, 2000);
+                </script>
+            </div>
+
+            <!-- Cart -->
+            <div class="cart">
+                <div class="main-content">
+                    <div class="wrapper">
+                        <div class="shopping-row">
+                            <div class="cart-item-block">
+                                <h3 class="cart-heading">Shopping cart</h3>
+                                <div class="cart-category-row">
+                                    <div class="category-name">Product</div>
+                                    <div class="category-name">Price</div>
+                                    <div class="category-name">Quantity</div>
+                                    <div class="category-name">Temp price</div>
+                                </div>
+                                <div class="separate separate-cart"></div>
+                                <!-- item1 -->
+                                <div class="cart-product-item">
+                                    <img
+                                        src="./assets/img/details-img-main.avif"
+                                        alt=""
+                                        class="product-cart-image"
+                                    />
+                                    <p
+                                        class="cart-product-name line-clamp clamp-2"
+                                    >
+                                        ARGENTINA 23 HOME JERSEY
+                                    </p>
+
+                                    <div class="cart-product-price">
+                                        <span>30$</span>
+                                    </div>
+                                    <div class="cart-product-quantity">
+                                        <div class="minus" id="minusBtn">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </div>
+                                        <div class="number">
+                                            <input
+                                                type="number"
+                                                value="1"
+                                                min="1"
+                                                id="quantityInput"
+                                            />
+                                        </div>
+                                        <div class="plus" id="plusBtn">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product-temp-price">
+                                        $14
+                                    </div>
+                                    <div class="cart-remove-icon">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </div>
+                                </div>
+                                <!-- js -->
+                                <!-- item2 -->
+                                <div class="cart-product-item">
+                                    <img
+                                        src="./assets/img/details-img-main.avif"
+                                        alt=""
+                                        class="product-cart-image"
+                                    />
+                                    <p
+                                        class="cart-product-name line-clamp clamp-2"
+                                    >
+                                        ARGENTINA 23 HOME JERSEY
+                                        dfsdfsdfdsfdfsfdsf
+                                    </p>
+                                    <div class="cart-product-price">
+                                        <span>30$</span>
+                                    </div>
+                                    <div class="cart-product-quantity">
+                                        <div class="minus" id="minusBtn">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </div>
+                                        <div class="number">
+                                            <input
+                                                type="number"
+                                                value="1"
+                                                min="1"
+                                                id="quantityInput"
+                                            />
+                                        </div>
+                                        <div class="plus" id="plusBtn">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product-temp-price">
+                                        $14
+                                    </div>
+                                    <div class="cart-remove-icon">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </div>
+                                </div>
+                                <!-- item3 -->
+                                <div class="cart-product-item">
+                                    <img
+                                        src="./assets/img/details-img-main.avif"
+                                        alt=""
+                                        class="product-cart-image"
+                                    />
+                                    <p
+                                        class="cart-product-name line-clamp clamp-2"
+                                    >
+                                        ARGENTINA 23 HOME JERSEY
+                                    </p>
+                                    <div class="cart-product-price">
+                                        <span>30$</span>
+                                    </div>
+                                    <div class="cart-product-quantity">
+                                        <div class="minus" id="minusBtn">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </div>
+                                        <div class="number">
+                                            <input
+                                                type="number"
+                                                value="1"
+                                                min="1"
+                                                id="quantityInput"
+                                            />
+                                        </div>
+                                        <div class="plus" id="plusBtn">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product-temp-price">
+                                        $14
+                                    </div>
+                                    <div class="cart-remove-icon">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </div>
+                                </div>
+
+                                <!-- js -->
+                                <script>
+                                    document.addEventListener(
+                                        "DOMContentLoaded",
+                                        function () {
+                                            var minusBtns =
+                                                document.querySelectorAll(
+                                                    ".minus"
+                                                );
+                                            var plusBtns =
+                                                document.querySelectorAll(
+                                                    ".plus"
+                                                );
+                                            var quantityInputs =
+                                                document.querySelectorAll(
+                                                    ".cart-product-item input[type='number']"
+                                                );
+
+                                            minusBtns.forEach(function (
+                                                minusBtn,
+                                                index
+                                            ) {
+                                                minusBtn.addEventListener(
+                                                    "click",
+                                                    function () {
+                                                        var currentValue =
+                                                            parseInt(
+                                                                quantityInputs[
+                                                                    index
+                                                                ].value
+                                                            );
+                                                        if (currentValue > 1) {
+                                                            quantityInputs[
+                                                                index
+                                                            ].value =
+                                                                currentValue -
+                                                                1;
+                                                            updateTempPrice(
+                                                                index
+                                                            );
+                                                        }
+                                                    }
+                                                );
+                                            });
+
+                                            plusBtns.forEach(function (
+                                                plusBtn,
+                                                index
+                                            ) {
+                                                plusBtn.addEventListener(
+                                                    "click",
+                                                    function () {
+                                                        var currentValue =
+                                                            parseInt(
+                                                                quantityInputs[
+                                                                    index
+                                                                ].value
+                                                            );
+                                                        quantityInputs[
+                                                            index
+                                                        ].value =
+                                                            currentValue + 1;
+                                                        updateTempPrice(index);
+                                                    }
+                                                );
+                                            });
+
+                                            function updateTempPrice(index) {
+                                                var quantity = parseInt(
+                                                    quantityInputs[index].value
+                                                );
+                                                var pricePerItem = 30; // Giả sử giá mỗi sản phẩm là $30
+                                                var tempPriceElement =
+                                                    document.querySelectorAll(
+                                                        ".cart-product-temp-price"
+                                                    )[index];
+                                                var tempPrice =
+                                                    quantity * pricePerItem;
+                                                tempPriceElement.textContent =
+                                                    "$" + tempPrice;
+                                            }
+                                        }
+                                    );
+                                </script>
+                            </div>
+                            <!-- Cart Total -->
+                            <div class="cart-total-block">
+                                <h4 class="cart-total-title">Summary</h4>
+                                <div class="separate cart"></div>
+                                <div class="cart-total-price-row">
+                                    <span>Items: 3</span>
+                                    <span>$76.00</span>
+                                </div>
+
+                                <div class="cart-shipping-label">SHIPPING</div>
+                                <div class="shipping-options">
+                                    <div class="shipping-option">
+                                        <input
+                                            type="radio"
+                                            id="standard"
+                                            name="shipping"
+                                            value="standard"
+                                        />
+                                        <label for="standard"
+                                            >Standard Delivery - $5.00</label
+                                        >
+                                    </div>
+                                    <div class="shipping-option">
+                                        <input
+                                            type="radio"
+                                            id="express"
+                                            name="shipping"
+                                            value="express"
+                                        />
+                                        <label for="express"
+                                            >Express Delivery - $10.00</label
+                                        >
+                                    </div>
+                                    <div class="shipping-option">
+                                        <input
+                                            type="radio"
+                                            id="premium"
+                                            name="shipping"
+                                            value="premium"
+                                        />
+                                        <label for="premium"
+                                            >Premium Delivery - $20.00</label
+                                        >
+                                    </div>
+                                </div>
+
+                                <div class="cart-shipping-label">GIVE CODE</div>
+
+                                <div class="discount">
+                                    <input
+                                        type="text"
+                                        id="discount"
+                                        name="code-voucher"
+                                        placeholder="Enter your code"
+                                    />
+                                </div>
+
+                                <div class="separate cart bottom"></div>
+                                <div class="cart-total-price-row">
+                                    <span>TOTAL PRICE</span>
+                                    <span>$76.00</span>
+                                </div>
+                                <button class="btn cart-submit">
+                                    <span>CHECK OUT </span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn back-home">
+                        <i class="fa-solid fa-arrow-left"></i
+                        ><span>Back to shop</span>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="voucher"
+                onclick="copyVoucher()"
+                title="Click to copy voucher"
+            >
+                #LUKA20K
+            </div>
+            <div class="copied-tooltip" id="copiedTooltip">Copied!</div>
+
+            <script>
+                function copyVoucher() {
+                    var voucherElement = document.querySelector(".voucher");
+                    var copiedTooltip =
+                        document.getElementById("copiedTooltip");
+
+                    // Tạo một thẻ input ẩn
+                    var input = document.createElement("input");
+                    // Thiết lập giá trị của input là nội dung của phần tử có class 'voucher'
+                    input.setAttribute("value", voucherElement.innerText);
+                    // Thêm input vào trang web
+                    document.body.appendChild(input);
+                    // Chọn nội dung của input
+                    input.select();
+                    // Sao chép nội dung đã chọn vào clipboard
+                    document.execCommand("copy");
+                    // Xóa input đã thêm vào trang web
+                    document.body.removeChild(input);
+                    // Hiển thị tooltip "copied"
+                    copiedTooltip.style.display = "block";
+                    // Ẩn tooltip sau 2 giây
+                    setTimeout(function () {
+                        copiedTooltip.style.display = "none";
+                    }, 2000);
+                }
+            </script>
+        </main>
+        <footer class="footer">
+            <div class="main-content">
+                <div class="body">
+                    <div class="social">
+                        <img
+                            src="./assets/icons/logo2.svg"
+                            alt=""
+                            class="logo"
+                        />
+
+                        <p class="desc">
+                            "Never give up, keep pushing forward. Believe in
+                            yourself and your abilities!"
+                        </p>
+                        <div class="social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h4 class="head">Store</h4>
+                        <ul class="info-cate">
+                            <li>About Us</li>
+                            <li>Features</li>
+                            <li>Our Pricing</li>
+                            <li>Latest News</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h4 class="head">Support</h4>
+                        <ul class="info-cate">
+                            <li><a href="#!">FAQ’s</a></li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h4 class="head">Address</h4>
+                        <ul class="info-cate">
+                            <li>
+                                <address>
+                                    <span class="contact">Location: </span> 27
+                                    To Ki St, 12 District, Ho Chi Minh City
+                                </address>
+                            </li>
+                            <li>
+                                <a href="mailto:example@example.com">
+                                    <span class="contact"> Email: </span
+                                    >lukasport@gmail.com</a
+                                >
+                            </li>
+                            <li>
+                                <a href="tel:+1234567890"
+                                    ><span class="contact">Phone: </span
+                                    >0378585203</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
