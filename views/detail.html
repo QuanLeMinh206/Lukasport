@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lukasport</title>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/" />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon//apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon//apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon//apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon//apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon//apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon//apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon//apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon//apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon//android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon//favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon//favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon//favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon//manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- reset css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- styles css -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/detail.css" />
+
+        <!-- embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700;1,800&family=Sen:wght@400..800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <header class="header fixed">
+                <div class="main-content">
+                    <div class="body">
+                        <img
+                            src="./assets/icons/logo.svg"
+                            alt="lukasport"
+                            class="logo"
+                        />
+                        <nav class="nav">
+                            <ul>
+                                <li class="active">
+                                    <a href="#!">Home</a>
+                                </li>
+                                <li class="">
+                                    <a href="#!">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Service</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#!">About Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="action">
+                            <button class="btn resgister">Register</button>
+                            <button class="btn login">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="detail">
+                <div class="main-content">
+                    <div class="body">
+                        <div class="breadcrumb">
+                            <div class="breadcrumb">
+                                Football / <span>Argentina 2024</span>
+                            </div>
+                        </div>
+                        <div class="product-details-row">
+                            <div class="product-details-img-block">
+                                <div class="details-img-main">
+                                    <div class="img-large-block">
+                                        <img
+                                            src="./assets/img/details-img-main.avif"
+                                            alt=""
+                                            class="details-image-large"
+                                        />
+                                    </div>
+                                    <div class="details-img-small-block">
+                                        <i class="top fa-solid fa-angle-up"></i>
+                                        <img
+                                            src="./assets/img/details-img-main1.avif"
+                                            alt=""
+                                            class="details-image-small"
+                                        />
+                                        <img
+                                            src="./assets/img/details-img-main2.avif"
+                                            alt=""
+                                            class="details-image-small"
+                                        />
+                                        <img
+                                            src="./assets/img/details-img-main3.avif"
+                                            alt=""
+                                            class="details-image-small"
+                                        />
+                                        <i
+                                            class="bottom fa-solid fa-angle-down"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <script>
+                                    var clorList = document.querySelectorAll(
+                                        ".details-img-main >.details-img-small-block > .details-image-small"
+                                    );
+                                    for (var i = 0; i < clorList.length; i++) {
+                                        clorList[i].onclick = function () {
+                                            var mainImg =
+                                                document.querySelector(
+                                                    ".details-img-main >.img-large-block>.details-image-large"
+                                                );
+                                            mainImg.src = this.src;
+                                        };
+                                    }
+                                </script>
+
+                                <div class="details-img-sub">
+                                    <div class="details-img-sub-row">
+                                        <h5 class="title-recent">
+                                            Recently viewed
+                                        </h5>
+                                        <div class="img-arrow">
+                                            <i
+                                                class="fa-solid fa-angle-left"
+                                            ></i>
+                                            <i
+                                                class="fa-solid fa-angle-right"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <div class="details-img-sub-block">
+                                        <img
+                                            src="./assets/img/detail-img1.avif"
+                                            alt=""
+                                            class="details-image-recent"
+                                        />
+                                        <img
+                                            src="./assets/img/detail-img2.avif
+                                            "
+                                            alt=""
+                                            class="details-image-recent"
+                                        />
+                                        <img
+                                            src="./assets/img/detail-img3.avif"
+                                            alt=""
+                                            class="details-image-recent"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-details-desc">
+                                <h2 class="heading lv2">
+                                    ARGENTINA 23 HOME JERSEY
+                                </h2>
+                                <p class="product-sub-title">
+                                    The harder you work for something, the
+                                    greater you’ll feel when you achieve it.
+                                </p>
+                                <div class="product-desc-price">Price:$20</div>
+                                <div class="separate"></div>
+                                <div class="product-desc-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <div class="product-choice">
+                                    <div class="product-choice-size">
+                                        <span>Size :</span>
+                                        <select>
+                                            <option value="S">S</option>
+                                            <option value="M" selected>
+                                                M
+                                            </option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                        </select>
+                                    </div>
+                                    <div class="product-choice-quantity">
+                                        <div class="minus" id="minusBtn">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </div>
+                                        <div class="number">
+                                            <input
+                                                type="number"
+                                                value="1"
+                                                min="1"
+                                                id="quantityInput"
+                                            />
+                                        </div>
+                                        <div class="plus" id="plusBtn">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    document.addEventListener(
+                                        "DOMContentLoaded",
+                                        function () {
+                                            var minusBtn =
+                                                document.getElementById(
+                                                    "minusBtn"
+                                                );
+                                            var plusBtn =
+                                                document.getElementById(
+                                                    "plusBtn"
+                                                );
+                                            var quantityInput =
+                                                document.getElementById(
+                                                    "quantityInput"
+                                                );
+
+                                            minusBtn.addEventListener(
+                                                "click",
+                                                function () {
+                                                    var currentValue = parseInt(
+                                                        quantityInput.value
+                                                    );
+                                                    if (currentValue > 1) {
+                                                        quantityInput.value =
+                                                            currentValue - 1;
+                                                    }
+                                                }
+                                            );
+
+                                            plusBtn.addEventListener(
+                                                "click",
+                                                function () {
+                                                    var currentValue = parseInt(
+                                                        quantityInput.value
+                                                    );
+                                                    quantityInput.value =
+                                                        currentValue + 1;
+                                                }
+                                            );
+                                        }
+                                    );
+                                </script>
+
+                                <div class="btn-block">
+                                    <button class="btn details buy-now">
+                                        Buy Now
+                                    </button>
+                                    <button class="btn details add-cart">
+                                        Add to cart
+                                    </button>
+                                </div>
+
+                                <div class="product-sub-description">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <p class="text-medium">
+                                        If you working so hard, you wil be good
+                                        at furture
+                                    </p>
+                                    <p class="text-small">
+                                        the greater you’ll feel when you achieve
+                                        it.
+                                    </p>
+                                    <div class="separate"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desc-comment -->
+            <div class="feedback">
+                <div class="main-content">
+                    <div class="card tabs">
+                        <input
+                            id="tab-1"
+                            type="radio"
+                            class="tab tab-selector"
+                            checked="checked"
+                            name="tab"
+                        />
+                        <label for="tab-1" class="tab tab-primary"
+                            >Description</label
+                        >
+                        <input
+                            id="tab-2"
+                            type="radio"
+                            class="tab tab-selector"
+                            name="tab"
+                        />
+                        <label for="tab-2" class="tab tab-success"
+                            >Evaluate</label
+                        >
+                        <input
+                            id="tab-3"
+                            type="radio"
+                            class="tab tab-selector"
+                            name="tab"
+                        />
+                        <label for="tab-3" class="tab tab-default"
+                            >Write evaluate</label
+                        >
+
+                        <div class="glider"></div>
+                        <section class="content">
+                            <div class="item" id="content-1">
+                                <h2 class="tab-title tab-warning">Tab 1</h2>
+                                <p>
+                                    Whether you're heading to the pitch or
+                                    relaxing at home, go through your day in
+                                    head-to-toe comfort and style with this
+                                    adidas track suit. Move naturally in a
+                                    distraction-free fit. AEROREADY keeps you
+                                    feeling fresh, dry and ready for anything.
+                                </p>
+                            </div>
+                            <div class="item" id="content-2">
+                                <h2 class="tab-title tab-success">Tab 2</h2>
+                            </div>
+                            <div class="item" id="content-3">
+                                <h2 class="tab-title tab-default">
+                                    Write Comment
+                                </h2>
+                                <textarea
+                                    id="comment"
+                                    rows="4"
+                                    cols="50"
+                                ></textarea>
+                                <!-- Textarea for writing comment -->
+                                <button class="btn" onclick="submitComment()">
+                                    Submit
+                                </button>
+                                <!-- Button to submit comment -->
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fav-product">
+                <div class="main-content">
+                    <div class="body">
+                        <div class="new-top">
+                            <div class="info">
+                                <h2 class="heading lv2">Favorite products</h2>
+                                <p class="desc">
+                                    There are always new models updated
+                                    continuously, giving you many trendy
+                                    choices.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-item">
+                                <img
+                                    src="./assets/img/new-1.png"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <h3 class="name">ARGENTINA 23 HOME JERSEY</h3>
+
+                                <div class="foot">
+                                    <span class="price">$120.75</span>
+                                    <button class="btn view">View</button>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <img
+                                    src="./assets/img/new-2.png"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <h3 class="name">ARGENTINA 23 HOME JERSEY</h3>
+
+                                <div class="foot">
+                                    <span class="price">$120.75</span>
+                                    <button class="btn view">View</button>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <img
+                                    src="./assets/img/new-3.jpg"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <h3 class="name">ARGENTINA 23 HOME JERSEY</h3>
+
+                                <div class="foot">
+                                    <span class="price">$120.75</span>
+                                    <button class="btn view">View</button>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <img
+                                    src="./assets/img/new-4.png"
+                                    alt="new 1"
+                                    class="image"
+                                />
+
+                                <h3 class="name">ARGENTINA 23 HOME JERSEY</h3>
+
+                                <div class="foot">
+                                    <span class="price">$120.75</span>
+                                    <button class="btn view">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="main-content">
+                <div class="body">
+                    <div class="social">
+                        <img
+                            src="./assets/icons/logo2.svg"
+                            alt=""
+                            class="logo"
+                        />
+
+                        <p class="desc">
+                            "Never give up, keep pushing forward. Believe in
+                            yourself and your abilities!"
+                        </p>
+                        <div class="social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h4 class="head">Store</h4>
+                        <ul class="info-cate">
+                            <li>About Us</li>
+                            <li>Features</li>
+                            <li>Our Pricing</li>
+                            <li>Latest News</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h4 class="head">Support</h4>
+                        <ul class="info-cate">
+                            <li><a href="#!">FAQ’s</a></li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h4 class="head">Address</h4>
+                        <ul class="info-cate">
+                            <li>
+                                <address>
+                                    <span class="contact">Location: </span> 27
+                                    To Ki St, 12 District, Ho Chi Minh City
+                                </address>
+                            </li>
+                            <li>
+                                <a href="mailto:example@example.com">
+                                    <span class="contact"> Email: </span
+                                    >lukasport@gmail.com</a
+                                >
+                            </li>
+                            <li>
+                                <a href="tel:+1234567890"
+                                    ><span class="contact">Phone: </span
+                                    >0378585203</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
