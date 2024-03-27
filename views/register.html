@@ -139,7 +139,7 @@
                             </button>
                         </div>
                         <div class="or-register">-OR-</div>
-                        <form action="" class="form">
+                        <form action="" class="form" id="myForm">
                             <div class="enter name">
                                 <label for="name">Your name</label>
                                 <input
@@ -148,6 +148,7 @@
                                     class="info"
                                     placeholder="Enter your name"
                                 />
+                                <span class="error" id="nameError"></span>
                             </div>
                             <div class="enter email">
                                 <label for="email">Your email</label>
@@ -157,6 +158,7 @@
                                     class="info"
                                     placeholder="Enter your email"
                                 />
+                                <span class="error" id="emailError"></span>
                             </div>
                             <div class="enter password">
                                 <label for="password">Password</label>
@@ -177,32 +179,74 @@
                                         id="toggleIcon"
                                     ></i>
                                 </button>
+                                <span class="error" id="passwordError"></span>
                             </div>
-                            <script>
-                                function togglePasswordVisibility() {
-                                    var passwordInput =
-                                        document.getElementById("password");
-                                    var toggleIcon =
-                                        document.getElementById("toggleIcon");
-
-                                    if (passwordInput.type === "password") {
-                                        passwordInput.type = "text";
-                                        toggleIcon.classList.remove(
-                                            "fa-eye-slash"
-                                        );
-                                        toggleIcon.classList.add("fa-eye");
-                                    } else {
-                                        passwordInput.type = "password";
-
-                                        toggleIcon.classList.remove("fa-eye");
-                                        toggleIcon.classList.add(
-                                            "fa-eye-slash"
-                                        );
-                                    }
-                                }
-                            </script>
                             <button class="btn submit">Create Account</button>
                         </form>
+
+                        <script>
+                            function togglePasswordVisibility() {
+                                var passwordInput =
+                                    document.getElementById("password");
+                                var toggleIcon =
+                                    document.getElementById("toggleIcon");
+
+                                if (passwordInput.type === "password") {
+                                    passwordInput.type = "text";
+                                    toggleIcon.classList.remove("fa-eye-slash");
+                                    toggleIcon.classList.add("fa-eye");
+                                } else {
+                                    passwordInput.type = "password";
+
+                                    toggleIcon.classList.remove("fa-eye");
+                                    toggleIcon.classList.add("fa-eye-slash");
+                                }
+                            }
+
+                            const form = document.getElementById("myForm");
+
+                            form.addEventListener("submit", function (event) {
+                                const name = document
+                                    .getElementById("name")
+                                    .value.trim();
+                                const email = document
+                                    .getElementById("email")
+                                    .value.trim();
+                                const password = document
+                                    .getElementById("password")
+                                    .value.trim();
+
+                                const nameError =
+                                    document.getElementById("nameError");
+                                const emailError =
+                                    document.getElementById("emailError");
+                                const passwordError =
+                                    document.getElementById("passwordError");
+
+                                // Reset errors
+                                nameError.textContent = "";
+                                emailError.textContent = "";
+                                passwordError.textContent = "";
+
+                                if (name === "") {
+                                    nameError.textContent = "Name is required";
+                                    event.preventDefault();
+                                }
+
+                                if (email === "") {
+                                    emailError.textContent =
+                                        "Email is required";
+                                    event.preventDefault();
+                                }
+
+                                if (password === "") {
+                                    passwordError.textContent =
+                                        "Password is required";
+                                    event.preventDefault();
+                                }
+                            });
+                        </script>
+
                         <div class="switch-account">
                             <span>Already have an account ?</span
                             ><a href="#!"> Login</a>
