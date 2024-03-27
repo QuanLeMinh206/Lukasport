@@ -1,0 +1,216 @@
+:root {
+    --font-heading: "Sen", "san-serif";
+    --primary: #0ac4de;
+    --secondary: #44576d;
+}
+.payment {
+    margin: 45px 0 70px 0;
+}
+
+.payment .heading.lv2 {
+    text-align: center;
+    margin: auto;
+}
+.payment .status-bar {
+    position: relative;
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    gap: 0 135px;
+}
+.payment .status-bar .item {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.payment .status-bar .title {
+    margin-top: 8px;
+}
+.payment .status-bar i {
+    font-size: 18px;
+    color: var(--primary);
+}
+.payment .status-bar .cart-block::before {
+    content: "";
+    position: absolute;
+    background-color: #0ac4de;
+    display: block;
+    width: 239px;
+    height: 3px;
+    top: 7px;
+    left: 353px;
+}
+.payment .status-bar .cart-block::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    display: block;
+    width: 238px;
+    height: 3px;
+    top: 7px;
+    left: 609px;
+}
+
+/* acc question */
+.acc-question {
+    margin-top: 70px;
+    height: 90px;
+    border-radius: 5px;
+    border: 0.5px solid #ebe1e1;
+    border-top: 4px solid var(--primary);
+    padding: 14px;
+}
+.acc-question .question {
+    display: flex;
+    color: #5f5b53;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+.acc-question .question a {
+    margin-left: 14px;
+    color: var(--primary);
+}
+
+/* Info-block*/
+.info-block {
+    margin-top: 50px;
+    display: flex;
+}
+.info-block .client-info {
+    width: 55%;
+}
+.info-block .title {
+    font-size: 20px;
+    font-weight: 500;
+}
+.client-info .form {
+    margin-top: 30px;
+}
+.client-info .form .enter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+}
+.client-info .form .enter label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.client-info .form .enter input {
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid #a7bcc9;
+    background: transparent;
+    padding-left: 10px;
+}
+.client-info .form .enter input::placeholder {
+    font-size: 12px;
+}
+.client-info .form .enter input:focus {
+    outline: none;
+    border: 1px solid var(--secondary);
+}
+.client-info .form .enter input:valid {
+    background: #def9fd;
+}
+
+.client-info .form .btn.submit-info {
+    cursor: pointer;
+    border-radius: 999px;
+    width: 150px;
+    height: 35px;
+}
+.client-info .form .error {
+    color: rgb(252, 86, 26);
+}
+.order-info {
+    padding: 20px;
+    background: transparent;
+    width: 40%;
+    margin-left: auto;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+}
+.order-info .pay-method,
+.order-info .bill {
+    margin-top: 20px;
+    background: #fff;
+}
+.order-info .bill .name-row {
+    display: flex;
+    padding: 20px 25px 0;
+    justify-content: space-between;
+}
+.order-info .bill .name-row h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.order-info .separate {
+    margin: 25px 0;
+    height: 0.2px;
+    background-color: #b1cbe9;
+    width: 100%;
+}
+.order-info .prod-row {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0 25px;
+}
+.order-info .prod-row .prod-name {
+    width: 245px;
+}
+.order-info .total-row {
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    justify-content: space-between;
+}
+.order-info .total-row .total-price {
+    font-weight: 500;
+    color: var(--primary);
+}
+.order-info .total-row .total-name {
+    font-weight: 500;
+}
+.order-info .pay-method {
+    padding: 20px 25px;
+}
+.order-info .pay-method .payment-options .payment-option:hover {
+    cursor: pointer;
+    color: var(--primary);
+}
+.order-info .pay-method .payment-options .payment-option:first-child {
+    margin-bottom: 20px;
+}
+
+.order-info .policy {
+    height: 200px;
+    overflow: auto;
+    margin-top: 30px;
+    background: #fdf5f5;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.order-info .policy .policy-content {
+    margin: 20px 25px;
+    line-height: 35px;
+}
+.order-info .policy .policy-content .title {
+    margin-bottom: 10px;
+}
+.order-info .agree {
+    margin-top: 30px;
+}
+.order-info .agree label {
+    cursor: pointer;
+    line-height: 20px;
+}
+.order-info .btn.order {
+    height: 55px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 999px;
+}
